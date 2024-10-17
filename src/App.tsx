@@ -27,10 +27,9 @@ function App() {
         <button
           onClick={() => {
             const { initData, initDataUnsafe } = WebApp;
-            console.log(initData);
-            WebApp.showAlert(
-              `init data ${initData} & unsafe ${JSON.stringify(initDataUnsafe)}`
-            );
+            console.log("safe", initData);
+            console.log("raw", initDataUnsafe);
+            WebApp.showAlert(`halo guys`);
           }}
         >
           Show Alert
