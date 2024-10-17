@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@twa-dev/sdk':
+        specifier: ^7.10.1
+        version: 7.10.1(react@18.3.1)
       '@vitejs/plugin-basic-ssl':
         specifier: ^1.1.0
         version: 1.1.0(vite@5.4.9)
@@ -442,6 +445,14 @@ packages:
     resolution: {integrity: sha512-fbMkAF7fufku0N2dE5TBXcNlg0pt0cJue4xBRE2Qc5Vqikxr4VCgKj/ht6SMdFcOacVA9rqF70APJ8RN/4vMJw==}
     cpu: [x64]
     os: [win32]
+
+  '@twa-dev/sdk@7.10.1':
+    resolution: {integrity: sha512-mY9JaBPspYfLdzoaARVmr0GKXUO3X4hi1vuP+04UUFWST2lB50xGSxExOFz5I3vBaxnrdLregBGiaitvvWaX6w==}
+    peerDependencies:
+      react: ^18.3.1
+
+  '@twa-dev/types@7.10.0':
+    resolution: {integrity: sha512-BXHyNLXy+cPbOZ2qQq5ArPKcP4kUfuX3YBSFT0XUxtMNWAzvyMuYAiq59UTfQ8OnELXlfChrAoIT3c2pujBtcQ==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1413,6 +1424,13 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.24.0':
     optional: true
+
+  '@twa-dev/sdk@7.10.1(react@18.3.1)':
+    dependencies:
+      '@twa-dev/types': 7.10.0
+      react: 18.3.1
+
+  '@twa-dev/types@7.10.0': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
