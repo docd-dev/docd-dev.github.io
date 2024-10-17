@@ -25,9 +25,13 @@ function App() {
       </div>
       <div className="card">
         <button
-          onClick={() =>
-            WebApp.showAlert(`Hello World! Current count is ${count}`)
-          }
+          onClick={() => {
+            const { initData, initDataUnsafe } = WebApp;
+            console.log(initData);
+            WebApp.showAlert(
+              `init data ${initData} & unsafe ${JSON.stringify(initDataUnsafe)}`
+            );
+          }}
         >
           Show Alert
         </button>
